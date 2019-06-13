@@ -1,0 +1,16 @@
+.search-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.icon-logo {
+  border-right: 1px solid black;
+  height: 100%;
+  width: 20%;
+}
+
+.logo {
+  width: 55%;
+  height: 100%;
+}
