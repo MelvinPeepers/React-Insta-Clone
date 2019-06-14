@@ -6,23 +6,23 @@ const SearchBar = () => {
   return (
     <div className="search-container">
       <div className="icon-logo">
-        <i class="fab fa-instagram fa-2x" />
+        <i className="fab fa-instagram fa-2x" />
       </div>
       <div className="image-logo">
         <ImageLogo />
       </div>
       <div>
         <input type="text" placeholder="Search" />
-        <i class="fas fa-search" />
+        <i className="fas fa-search" />
       </div>
       <div className="social-icon">
-        <i class="far fa-compass" />
+        <i className="far fa-compass" />
       </div>
       <div className="social-icon">
-        <i class="far fa-heart" />
+        <i className="far fa-heart" />
       </div>
       <div className="social-icon">
-        <i class="far fa-user" />
+        <i className="far fa-user" />
       </div>
     </div>
   );

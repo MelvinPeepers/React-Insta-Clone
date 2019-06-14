@@ -1,0 +1,15 @@
+.post-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.igphoto {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.post-hero-image {
+  display: flex;
+  flex-direction: column;
+}
