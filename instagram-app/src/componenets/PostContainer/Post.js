@@ -3,7 +3,7 @@ import React from "react";
 const Post = props => {
   //   console.log(props);
   return (
-    <div className="post-container">
+    <div className="post-wrapper">
       <div className="post-header">
         <img
           src={props.igInfo.thumbnailUrl}
@@ -17,12 +17,14 @@ const Post = props => {
           <img src={props.igInfo.imageUrl} className="imgurl" alt="main-post" />
         </div>
       </div>
-      <div className="social-comment-icons">
-        <i className="far fa-heart" />
-        <i className="far fa-comment" />
-      </div>
-      <div className="social-likes">
-        <p>{props.igInfo.likes} likes</p>
+      <div className="likes-container">
+        <div className="social-comment-icons">
+          <i className="far fa-heart fa-2x" />
+          <i className="far fa-comment fa-2x fa-flip-horizontal" />
+        </div>
+        <div className="social-likes">
+          <p>{props.igInfo.likes} likes</p>
+        </div>
       </div>
     </div>
   );

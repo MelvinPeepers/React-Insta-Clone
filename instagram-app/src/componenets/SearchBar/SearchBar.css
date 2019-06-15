@@ -1,16 +1,39 @@
 .search-container {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #3333;
+  height: 60px;
+  background: #ffffff;
 }
 
 .icon-logo {
   border-right: 1px solid black;
-  height: 100%;
-  width: 20%;
+  padding-right: 20px;
+  margin-right: 20px;
 }
 
-.logo {
-  width: 55%;
+.image-logo img {
+  padding-right: 70px;
+  width: 40%;
   height: 100%;
+}
+
+.search-bar {
+  padding-right: 170px;
+}
+
+.fa-search {
+  color: #565656;
+}
+
+.social-container {
+  display: flex;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  padding-right: 30px;
+  color: #565656;
 }
