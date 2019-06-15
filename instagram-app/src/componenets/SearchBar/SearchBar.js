@@ -1,5 +1,4 @@
 import React from "react";
-import "./SearchBar.css";
 import ImageLogo from "./ImageLogo";
 
 const SearchBar = () => {

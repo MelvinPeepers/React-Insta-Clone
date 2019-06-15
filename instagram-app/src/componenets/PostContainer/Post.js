@@ -1,4 +1,5 @@
 import React from "react";
+import CommentSection from "../CommentSection/CommentSection";
 
 const Post = props => {
   //   console.log(props);
@@ -26,6 +27,7 @@ const Post = props => {
           <p>{props.igInfo.likes} likes</p>
         </div>
       </div>
+      <CommentSection comments={props.igInfo.comments} />
     </div>
   );
 };
