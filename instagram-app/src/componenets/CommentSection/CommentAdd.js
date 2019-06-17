@@ -2,9 +2,11 @@ import React from "react";
 
 const CommentAdd = props => {
   return (
-    <form>
-      <input type="text" plaecholder="Add a comment..." />
-    </form>
+    <div className="add-form-comment">
+      <form>
+        <input type="text" placeholder="Add a comment..." />
+      </form>
+    </div>
   );
 };
 
