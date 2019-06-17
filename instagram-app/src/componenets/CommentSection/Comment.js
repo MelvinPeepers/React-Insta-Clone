@@ -1,12 +1,22 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Comment = props => {
   return (
     <div className="comment-text">
-      <span className="comment">{props.comment.text}</span>{" "}
-      <span className="user">{props.comment.username}</span>
+      <div className="user">{props.comment.username}</div>
+      <div className="comment">{props.comment.text}</div>
     </div>
   );
+};
+
+Comment.propTypes = {
+  comments: PropTypes.arrayOf(
+    PropTypes.shape({
+      username: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired
+    })
+  )
 };
 
 export default Comment;

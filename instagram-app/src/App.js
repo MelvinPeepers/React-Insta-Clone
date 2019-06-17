@@ -1,10 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
 import SearchBar from "./componenets/SearchBar/SearchBar";
 import PostContainer from "./componenets/PostContainer/PostContainer";
-// import CommentSection from "./componenets/CommentSection/CommentSection";
 import dummyData from "./dummy-data";
 import "./componenets/SearchBar/SearchBar.css";
+import "./componenets/CommentSection/CommentSection.css";
 import "./App.css";
 
 class App extends React.Component {

@@ -1,0 +1,9 @@
+.comment-text {
+  display: flex;
+  border-bottom: 1px solid #efefef;
+}
+
+.user {
+  font-weight: bold;
+  padding: 0 10px 10px 0;
+}
