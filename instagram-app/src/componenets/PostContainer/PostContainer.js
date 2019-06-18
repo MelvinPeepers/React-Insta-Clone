@@ -5,8 +5,8 @@ import "./PostContainer.css";
 const PostContainer = props => {
   return (
     <div className="post-info">
-      {props.igPost.map(postInfo => (
-        <Post igInfo={postInfo} key={postInfo.username} />
+      {props.posts.map(post => (
+        <Post post={post} key={post.username} />
       ))}
     </div>
   );

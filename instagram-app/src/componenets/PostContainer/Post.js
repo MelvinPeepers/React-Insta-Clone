@@ -6,16 +6,12 @@ const Post = props => {
   return (
     <div className="post-wrapper">
       <div className="post-header">
-        <img
-          src={props.igInfo.thumbnailUrl}
-          className="igphoto"
-          alt="profile"
-        />
-        <p>{props.igInfo.username}</p>
+        <img src={props.post.thumbnailUrl} className="igphoto" alt="profile" />
+        <p>{props.post.username}</p>
       </div>
       <div className="post-hero-image">
         <div>
-          <img src={props.igInfo.imageUrl} className="imgurl" alt="main-post" />
+          <img src={props.post.imageUrl} className="imgurl" alt="main-post" />
         </div>
       </div>
       <div className="likes-container">
@@ -24,10 +20,10 @@ const Post = props => {
           <i className="far fa-comment fa-2x fa-flip-horizontal" />
         </div>
         <div className="social-likes">
-          <p>{props.igInfo.likes} likes</p>
+          <p>{props.post.likes} likes</p>
         </div>
       </div>
-      <CommentSection comments={props.igInfo.comments} />
+      <CommentSection comments={props.post.comments} />
     </div>
   );
 };

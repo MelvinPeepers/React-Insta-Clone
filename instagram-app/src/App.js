@@ -21,7 +21,7 @@ class App extends React.Component {
           <SearchBar />
         </div>
         <div className="post-container">
-          <PostContainer igPost={this.state.posts} />
+          <PostContainer posts={this.state.posts} />
         </div>
         {/* <div className="comment-container">
           <CommentSection igComment={this.state.posts} />
