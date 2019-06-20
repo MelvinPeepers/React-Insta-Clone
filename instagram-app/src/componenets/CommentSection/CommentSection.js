@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import CommentAdd from "./CommentAdd";
 import Comment from "./Comment";
 
-class CommentSection extends React.Component {
+class CommentSection extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,12 +11,13 @@ class CommentSection extends React.Component {
     };
   }
   render() {
+    const { comment } = this.state;
     return (
       <div>
-        {this.state.comment.map((comment, index) => (
-          <Comment key={index} comment={comment} />
+        {comment.map(comment => (
+          <Comment key={comment.likes} comment={comment} />
         ))}
-        <CommentAdd comment={this.state.comment} />
+        <CommentAdd comment={comment} />
       </div>
     );
   }
